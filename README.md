@@ -28,4 +28,4 @@ Si a pesar de haberlo escrito correctamente te sale como erróneo, ¡quiero ofre
 
 Esta página le pertenece 100% a [Fernando Pérez](https://fermop.github.io/portafolio/), pero si te gustaría contribuir ¡siéntete cómodo en hacerlo! Este proyecto es completamente open source y cualquiera puede dejar su granito de arena. 😄
 
-Así que puedes clonar el repositorio en tu computadora sin ningún problema, yo estaré a la espera de tu pull request. 💻👩🏽‍💻
+Así que puedes clonar el repositorio en tu computadora sin ningún problema, yo estaré a la espera de tu pull request. 💻👨🏽‍💻
