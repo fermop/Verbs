@@ -4,7 +4,7 @@ Este es un proyecto personal con el objetivo de brindarles a mis compañeros de 
 
 ## Live site
 
-- []()
+- [https://fermop.github.io/Verbs/](https://fermop.github.io/Verbs/)
 
 ## Tecnologías utilizadas
 
