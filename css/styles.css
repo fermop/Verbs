@@ -164,7 +164,7 @@ main {
 /* Esilos para secciones */
   /* Verbs container */
 .verbs-container {
-  max-width: 46.25rem;
+  max-width: 46.875rem;
   margin: 0 auto;
 }
 .verb-container {
@@ -177,7 +177,7 @@ main {
   padding-left: 1rem;
 }
 .number {
-  width: 6.25rem;
+  width: 6.875rem;
   font-size: 1rem;
   margin-right: 1rem;
 }
