@@ -227,6 +227,13 @@ input {
 .regular-text-justify {font-size: 1rem;text-align: justify;}
 
 /* Responsiveness */
+
+@media (min-width: 26.25rem) {
+  .sections {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
 @media (min-width: 45rem) {
   .hamburger {
     display: none;
@@ -241,5 +248,11 @@ input {
     position: relative;
     top: unset;
     flex-direction: row;
+  }
+}
+
+@media (min-width: 53.125rem) {
+  .sections {
+    grid-template-columns: repeat(4, 1fr);
   }
 }
