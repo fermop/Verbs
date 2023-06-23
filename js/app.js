@@ -8,8 +8,9 @@ const verifyBtn = document.querySelector('.verify');
 const resetBtn = document.querySelector('.reset');
 const showAnswersBtn = document.querySelector('.show');
 
-// Funcion para el boton de VERIFICAR/VALIDAR valores
-verifyBtn.onclick = function() {
+// Funciones
+  // Funcion para el boton de VERIFICAR/VALIDAR valores
+function verify() {
   for (let i = 0; i < past.length; i++) {
     // Inputs de verbos en pasado
     if (verbsPast[i].value == past[i]) {
@@ -41,8 +42,8 @@ verifyBtn.onclick = function() {
 
 }
 
-// Funcion para el boton de REINICIAR valores
-resetBtn.onclick = function() {
+  // Funcion para el boton de REINICIAR valores
+function reset() {
   for (let i = 0; i < past.length; i++) {
     // Inputs de verbos en pasado
     if (verbsPast[i].classList.contains('correct') || verbsPast[i].classList.contains('incorrect') || verbsPast[i].value != '') {
@@ -67,8 +68,8 @@ resetBtn.onclick = function() {
   }
 }
 
-// Funcion para el boton de RESPUESTAS.
-showAnswersBtn.onclick = function() {
+  // Funcion para el boton de RESPUESTAS.
+function showAnswer() {
   for (let i = 0; i < past.length; i++) {
     // Quitar colores en los inputs si es que tienen colores
     if (verbsMeaning[i].classList.contains('correct') || verbsMeaning[i].classList.contains('incorrect')) {
@@ -89,3 +90,24 @@ showAnswersBtn.onclick = function() {
     verbsMeaning[i].value = meaning[i];
   }
 }
+
+// Shortcuts
+document.addEventListener('keydown', function(e) {
+  // Botón VERIFICAR
+  if (e.altKey && e.key === 'v') {
+    verify();
+  }
+  // Botón REINICIAR
+  if (e.altKey && e.key === 'r') {
+    reset();
+  }
+  // Botón RESPUESTAS
+  if (e.altKey && e.key === 'a') {
+    showAnswer();
+  }
+});
+
+// Eventos
+verifyBtn.addEventListener('click', verify);
+resetBtn.addEventListener('click', reset);
+showAnswersBtn.addEventListener('click', showAnswer);
