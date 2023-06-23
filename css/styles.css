@@ -5,6 +5,7 @@
   --headings: #1E0E62;
   --text: rgba(21, 20, 57, 0.4);
   --bg: #F1F1F1;
+  --bg-ActiveSate: #e4e4e4;
 
   --ff-base: 'DM Sans', sans-serif;
 
@@ -153,7 +154,8 @@ main {
 }
 
 /* Section active */
-.active {
+.sections .active {
+  background-color: var(--bg-ActiveSate);
   font-weight: var(--fw-bold);
 }
 /* Unavailable sections */
