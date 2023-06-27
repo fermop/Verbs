@@ -2,6 +2,7 @@
 const verbsPast = document.querySelectorAll('.past');
 const verbsPastParticiple = document.querySelectorAll('.pastParticiple');
 const verbsMeaning = document.querySelectorAll('.meaning');
+const inputs = document.getElementsByTagName('input');
 
 // Botones
 const verifyBtn = document.querySelector('.verify');
@@ -91,6 +92,15 @@ function showAnswer() {
   }
 }
 
+  // Función para convertir en mayúscula la primer letra de una cadena de texto en un input.
+function capitalizeFirstLetter() {
+  for (let i = 0; i < inputs.length; i++) {
+    if (inputs[i].value != '') {
+      inputs[i].value = inputs[i].value[0].toUpperCase() + inputs[i].value.slice(1);
+    }
+  }
+}
+
 // Shortcuts
 document.addEventListener('keydown', function(e) {
   // Botón VERIFICAR
@@ -111,3 +121,6 @@ document.addEventListener('keydown', function(e) {
 verifyBtn.addEventListener('click', verify);
 resetBtn.addEventListener('click', reset);
 showAnswersBtn.addEventListener('click', showAnswer);
+for (let i = 0; i < inputs.length; i++) {
+  inputs[i].addEventListener('blur', capitalizeFirstLetter);
+}
