@@ -5,46 +5,12 @@ const verbsMeaning = document.querySelectorAll('.meaning');
 const inputs = document.getElementsByTagName('input');
 
 // Botones
-const verifyBtn = document.querySelector('.verify');
 const resetBtn = document.querySelector('.reset');
 const showAnswersBtn = document.querySelector('.show');
 
 // Funciones
-  // Funcion para el boton de VERIFICAR/VALIDAR valores
-function verify() {
-  for (let i = 0; i < past.length; i++) {
-    // Inputs de verbos en pasado
-    if (verbsPast[i].value == past[i]) {
-      verbsPast[i].classList.remove('incorrect');
-      verbsPast[i].classList.add('correct');
-    } else {
-      verbsPast[i].classList.remove('correct');
-      verbsPast[i].classList.add('incorrect');
-    }
-
-    // Inputs de verbos en pasado participio
-    if (verbsPastParticiple[i].value == pastParticiple[i]) {
-      verbsPastParticiple[i].classList.remove('incorrect');
-      verbsPastParticiple[i].classList.add('correct');
-    } else {
-      verbsPastParticiple[i].classList.remove('correct');
-      verbsPastParticiple[i].classList.add('incorrect');
-    }
-
-    // Inputs de verbos en significado
-    if (verbsMeaning[i].value == meaning[i]) {
-      verbsMeaning[i].classList.remove('incorrect');
-      verbsMeaning[i].classList.add('correct');
-    } else {
-      verbsMeaning[i].classList.remove('correct');
-      verbsMeaning[i].classList.add('incorrect');
-    }
-  }
-
-}
-
   // Funcion para verificar respuesta al escuchar evento 'blur'
-function verify2() {
+function verify() {
   for (let i = 0; i < past.length; i++) {
     // ----- Inputs de verbos en Pasado -----
     if (verbsPast[i].value == past[i] && verbsPast[i].value != '') { // Correcto
@@ -154,10 +120,6 @@ function capitalizeFirstLetter() {
 
 // Shortcuts
 document.addEventListener('keydown', function(e) {
-  // Botón VERIFICAR
-  if (e.altKey && e.key === 'v') {
-    verify();
-  }
   // Botón REINICIAR
   if (e.altKey && e.key === 'r') {
     reset();
@@ -169,12 +131,12 @@ document.addEventListener('keydown', function(e) {
 });
 
 // Eventos
-verifyBtn.addEventListener('click', verify);
-resetBtn.addEventListener('click', reset);
-showAnswersBtn.addEventListener('click', showAnswer);
-for (let i = 0; i < inputs.length; i++) { // Agregando eventos para todos los inputs
+resetBtn.addEventListener('click', reset); // Boton REINICIAR
+showAnswersBtn.addEventListener('click', showAnswer); // Boton RRESPUESTAS
+
+for (let i = 0; i < inputs.length; i++) { // Agregando eventos para todos los inputs.
   inputs[i].addEventListener('blur', function() {
     capitalizeFirstLetter();
-    verify2();
+    verify();
   });
 }
