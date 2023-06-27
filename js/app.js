@@ -43,6 +43,57 @@ function verify() {
 
 }
 
+  // Funcion para verificar respuesta al escuchar evento 'blur'
+function verify2() {
+  for (let i = 0; i < past.length; i++) {
+    // ----- Inputs de verbos en Pasado -----
+    if (verbsPast[i].value == past[i] && verbsPast[i].value != '') { // Correcto
+      verbsPast[i].classList.remove('incorrect');
+      verbsPast[i].classList.add('correct');
+
+    } else if (verbsPast[i].value != past[i] && verbsPast[i].value != '') { // Erróneo
+      verbsPast[i].classList.remove('correct');
+      verbsPast[i].classList.add('incorrect');
+
+    } else if (verbsPast[i].value == '' && (verbsPast[i].classList.contains('correct') || verbsPast[i].classList.contains('incorrect'))) {
+      // Eliminar clases de 'correcto' o 'incorrecto' si el input está vacío  
+      verbsPast[i].classList.remove('correct');
+      verbsPast[i].classList.remove('incorrect');
+    }
+
+    // ----- Inputs de verbos en Pasado Participio -----
+    if (verbsPastParticiple[i].value == pastParticiple[i] && verbsPastParticiple[i].value != '') { // Correcto
+      verbsPastParticiple[i].classList.remove('incorrect');
+      verbsPastParticiple[i].classList.add('correct');
+
+    } else if (verbsPastParticiple[i].value != pastParticiple[i] && verbsPastParticiple[i].value != '') { // Erróneo
+      verbsPastParticiple[i].classList.remove('correct');
+      verbsPastParticiple[i].classList.add('incorrect');
+
+    } else if (verbsPastParticiple[i].value == '' && (verbsPastParticiple[i].classList.contains('correct') || verbsPastParticiple[i].classList.contains('incorrect'))) {
+      // Eliminar clases de 'correcto' o 'incorrecto' si el input está vacío
+      verbsPastParticiple[i].classList.remove('correct');
+      verbsPastParticiple[i].classList.remove('incorrect');
+    }
+
+    // ----- Inputs de verbos en Meaning -----
+    if (verbsMeaning[i].value == meaning[i] && verbsMeaning[i].value != '') { // Correcto
+      verbsMeaning[i].classList.remove('incorrect');
+      verbsMeaning[i].classList.add('correct');
+
+    } else if (verbsMeaning[i].value != meaning[i] && verbsMeaning[i].value != '') { // Erróneo
+      verbsMeaning[i].classList.remove('correct');
+      verbsMeaning[i].classList.add('incorrect');
+
+    } else if (verbsMeaning[i].value == '' && (verbsMeaning[i].classList.contains('correct') || verbsMeaning[i].classList.contains('incorrect'))) {
+      // Eliminar clases de 'correcto' o 'incorrecto' si el input está vacío
+      verbsMeaning[i].classList.remove('correct');
+      verbsMeaning[i].classList.remove('incorrect');
+    }
+
+    }
+}
+
   // Funcion para el boton de REINICIAR valores
 function reset() {
   for (let i = 0; i < past.length; i++) {
@@ -121,6 +172,9 @@ document.addEventListener('keydown', function(e) {
 verifyBtn.addEventListener('click', verify);
 resetBtn.addEventListener('click', reset);
 showAnswersBtn.addEventListener('click', showAnswer);
-for (let i = 0; i < inputs.length; i++) {
-  inputs[i].addEventListener('blur', capitalizeFirstLetter);
+for (let i = 0; i < inputs.length; i++) { // Agregando eventos para todos los inputs
+  inputs[i].addEventListener('blur', function() {
+    capitalizeFirstLetter();
+    verify2();
+  });
 }
