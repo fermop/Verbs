@@ -95,7 +95,7 @@ function showAnswer() {
   // Función para convertir en mayúscula la primer letra de una cadena de texto en un input.
 function capitalizeFirstLetter() {
   for (let i = 0; i < inputs.length; i++) {
-    if (inputs[i].value != '') {
+    if (inputs[i].value != '' && inputs[i].value[0] != inputs[i].value[0].toUpperCase()) {
       inputs[i].value = inputs[i].value[0].toUpperCase() + inputs[i].value.slice(1);
     }
   }
