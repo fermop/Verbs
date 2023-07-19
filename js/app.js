@@ -9,7 +9,8 @@ const resetBtn = document.querySelector('.reset');
 const showAnswersBtn = document.querySelector('.show');
 
 // Funciones
-  // Funcion para verificar respuesta al escuchar evento 'blur'
+  // Funciones para evento 'blur'
+    // Funcion para verificar
 function verify() {
   for (let i = 0; i < past.length; i++) {
     // ----- Inputs de verbos en Pasado -----
@@ -60,7 +61,26 @@ function verify() {
     }
 }
 
-  // Funcion para el boton de REINICIAR valores
+    // Función para convertir en mayúscula la primer letra de una cadena de texto en un input.
+function capitalizeFirstLetter() {
+  for (let i = 0; i < inputs.length; i++) {
+    if (inputs[i].value != '' && inputs[i].value[0] != inputs[i].value[0].toUpperCase()) {
+      inputs[i].value = inputs[i].value[0].toUpperCase() + inputs[i].value.slice(1);
+    }
+  }
+}
+
+    // Función para eliminar espacios al inicio y final del texto
+function deleteSpace() {
+  for (let i = 0; i < inputs.length; i++) {
+    if (inputs[i].value != '') {
+      inputs[i].value = inputs[i].value.trim();
+    }
+  }
+}
+
+  // Funciones para evento 'click'
+    // Funcion para el boton de REINICIAR valores
 function reset() {
   for (let i = 0; i < past.length; i++) {
     // Inputs de verbos en pasado
@@ -86,7 +106,7 @@ function reset() {
   }
 }
 
-  // Funcion para el boton de RESPUESTAS.
+    // Funcion para el boton de RESPUESTAS.
 function showAnswer() {
   for (let i = 0; i < past.length; i++) {
     // Quitar colores en los inputs si es que tienen colores
@@ -109,15 +129,6 @@ function showAnswer() {
   }
 }
 
-  // Función para convertir en mayúscula la primer letra de una cadena de texto en un input.
-function capitalizeFirstLetter() {
-  for (let i = 0; i < inputs.length; i++) {
-    if (inputs[i].value != '' && inputs[i].value[0] != inputs[i].value[0].toUpperCase()) {
-      inputs[i].value = inputs[i].value[0].toUpperCase() + inputs[i].value.slice(1);
-    }
-  }
-}
-
 // Shortcuts
 document.addEventListener('keydown', function(e) {
   // Botón REINICIAR
@@ -136,6 +147,7 @@ showAnswersBtn.addEventListener('click', showAnswer); // Boton RRESPUESTAS
 
 for (let i = 0; i < inputs.length; i++) { // Agregando eventos para todos los inputs.
   inputs[i].addEventListener('blur', function() {
+    deleteSpace();
     capitalizeFirstLetter();
     verify();
   });
