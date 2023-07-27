@@ -1,84 +1,1375 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Aprende 118 verbos irregulares en inglés</title>
-  <!-- Font awesome -->
-  <script src="https://kit.fontawesome.com/4d3920bd92.js" crossorigin="anonymous"></script>
-  <!-- Google fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
-  <!-- Style sheet -->
-  <link rel="preload" href="./css/styles.css" as="style">
-  <link rel="stylesheet" href="./css/styles.css">
-</head>
-<body>
-  <header>
-    <nav class="container nav__container">
-      <h1 class="title"><a href="#" class="logo">Fearn</a></h1>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aprende 118 verbos irregulares en inglés</title>
+    <!-- Font awesome -->
+    <script
+      src="https://kit.fontawesome.com/4d3920bd92.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Style sheet -->
+    <link rel="preload" href="./css/styles.css" as="style" />
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body class="">
+    <header class="header">
+      <nav class="container nav__container">
+        <h1 class="logo">Fearn</h1>
 
-      <i class="fa-solid fa-bars hamburger"></i>
-      <ul class="nav__list">
-        <li class="nav__item"><a href="#practice">Practica</a></li>
-        <li class="nav__item"><a href="#error">¿Encontraste algún error?</a></li>
-        <li class="nav__item"><a href="#contribution">Contribuir</a></li>
-        <li class="nav__item"><a href="./verbs/verbos.pdf" target="_blank">Verbos</a></li>
-      </ul>
-    </nav>
-  </header>
+        <i class="fa-solid fa-bars hamburger"></i>
 
-  <main>
-    <div class="container">
-      <section class="instructions">
-        <h2 id="practice">Practica</h2>
-        <p class="regular-text-justify">Selecciona la sección que te gustaría practiar.</p>
-
-        <div class="sections">
-          <a href="./1-15/#exercise">Sección 1 al 15</a>
-          <a href="./16-30/#exercise">Sección 16 al 30</a>
-          <a href="./31-45/#exercise">Sección 31 al 45</a>
-          <a href="./46-60/#exercise">Sección 46 al 60</a>
-          <a href="./61-75/#exercise">Sección 61 al 75</a>
-          <a href="./76-90/#exercise">Sección 76 al 90</a>
-          <a href="./91-105/#exercise">Sección 91 al 105</a>
-          <a href="./105-118/#exercise">Sección 105 al 118</a>
-        </div>
-      </section>
-
-      <section id="error" class="error">
-        <h2 class="subtitle">¿Encontraste algún error?</h2>
-        <p class="regular-text-justify">Recuerda que para que tus respuestas sean válidas deben estar estrictamente escritas tal cuál vienen en las <a href="./verbs/verbos.pdf" target="_blank" class="bold underline">hojas proporcionadas por la profesora</a> y sin espacios al inicio o final del texto escrito (a excepción del verbo 'Be' en donde se debe escribir con espacio en Past y de las traducciones en donde existen 2 opciones posibles). Por ejemplo, en el verbo número 38 tenemos <span class="bold">'Get'</span>, su forma en pasado sería <span class="bold">'Got'</span>, su forma en pasado participio sería <span class="bold">'Got'</span> y su traducción al español sería <span class="bold">'Tener, obtener'</span>. El programa te marcaría error si escribes cualquiera de las siguientes formas:</p>
-
-        <ul class="mg-vertically mg-left">
-          <li class="bold">GOT (todas en mayúscula)</li>
-          <li class="bold">got (todas en minúscula)</li>
-          <li class="bold">ㅤTener, obtenerㅤ(espacios al inicio o final de la caja de texto)</li>
+        <ul class="nav__list">
+          <li class="nav__item"><a href="#sections">Secciones</a></li>
+          <li class="nav__item"><a href="#error">¿Encontraste algún error?</a></li>
+          <li class="nav__item"><a href="#contribution">Contribuir</a></li>
+          <li class="nav__item"><a href="./verbs/verbos.pdf" target="_blank">Verbos</a></li>
+          <i class="fa-solid fa-circle-half-stroke nav__item theme-toggle"></i>
         </ul>
+      </nav>
+    </header>
 
-        <p class="regular-text-justify">Si a pesar de haberlo escrito correctamente te sale como erróneo, ¡quiero ofrecerte una disculpa! Te agradecería bastante si me lo hicieras saber para hacer la correción lo más rápido posible y brindarte una herramienta completamente gratuita para que puedas aprender sin complicaciones! Puedes contactarme mediante mi cuenta personal de Facebook o enviándome un correo electrónico. ¡Trataré de contestarte lo antes posible!</p>
+    <main>
+      <div class="container">
+        <!-- Section Instruccions -->
+        <section id="sections" class="instructions">
+          <h2 class="subtitle">Secciones</h2>
+          <p class="instructions__text regular-text-justify">
+            Selecciona la o las secciones que te gustaría practiar.
+          </p>
+          <div class="sections-to-select__wrapper">
+            <p class="sections-available">Sección 1 al 15</p>
+            <p class="sections-available">Sección 16 al 30</p>
+            <p class="sections-available">Sección 31 al 45</p>
+            <p class="sections-available">Sección 46 al 60</p>
+            <p class="sections-available">Sección 61 al 75</p>
+            <p class="sections-available">Sección 76 al 90</p>
+            <p class="sections-available">Sección 91 al 105</p>
+            <p class="sections-available">Sección 105 al 118</p>
+          </div>
+        </section>
+          
+        <!-- Sections -->
+        <div class="verb-sections-wrapper">
+          <!-- Section 1 - (1 to 15) -->
+          <section class="section">
+            <h2 class="subtitle">Sección 1 - Verbos 1 a 15</h2>
+  
+            <div class="verbs-container">
+              <div class="verb-container">
+                <p>1. Arise</p>
+  
+                <div class="verb-container__inputs">
+                  <input type="text" placeholder="Past" />
+                  <input type="text" placeholder="Past Participle" />
+                  <input type="text" placeholder="Meaning" />
+                </div>
+              </div>
+  
+              <div class="verb-container">
+                <p>2. Be</p>
+  
+                <div class="verb-container__inputs">
+                  <input type="text" placeholder="Past" />
+                  <input type="text" placeholder="Past Participle" />
+                  <input type="text" placeholder="Meaning" />
+                </div>
+              </div>
+  
+              <div class="verb-container">
+                <p>3. Beat</p>
+  
+                <div class="verb-container__inputs">
+                  <input type="text" placeholder="Past" />
+                  <input type="text" placeholder="Past Participle" />
+                  <input type="text" placeholder="Meaning" />
+                </div>
+              </div>
+  
+              <div class="verb-container">
+                <p>4. Become</p>
+  
+                <div class="verb-container__inputs">
+                  <input type="text" placeholder="Past" />
+                  <input type="text" placeholder="Past Participle" />
+                  <input type="text" placeholder="Meaning" />
+                </div>
+              </div>
+  
+              <div class="verb-container">
+                <p>5. Begin</p>
+  
+                <div class="verb-container__inputs">
+                  <input type="text" placeholder="Past" />
+                  <input type="text" placeholder="Past Participle" />
+                  <input type="text" placeholder="Meaning" />
+                </div>
+              </div>
+  
+              <div class="verb-container">
+                <p>6. Bet</p>
+  
+                <div class="verb-container__inputs">
+                  <input type="text" placeholder="Past" />
+                  <input type="text" placeholder="Past Participle" />
+                  <input type="text" placeholder="Meaning" />
+                </div>
+              </div>
+  
+              <div class="verb-container">
+                <p>7. Bite</p>
+  
+                <div class="verb-container__inputs">
+                  <input type="text" placeholder="Past" />
+                  <input type="text" placeholder="Past Participle" />
+                  <input type="text" placeholder="Meaning" />
+                </div>
+              </div>
+  
+              <div class="verb-container">
+                <p>8. Bleed</p>
+  
+                <div class="verb-container__inputs">
+                  <input type="text" placeholder="Past" />
+                  <input type="text" placeholder="Past Participle" />
+                  <input type="text" placeholder="Meaning" />
+                </div>
+              </div>
+  
+              <div class="verb-container">
+                <p>9. Blow</p>
+  
+                <div class="verb-container__inputs">
+                  <input type="text" placeholder="Past" />
+                  <input type="text" placeholder="Past Participle" />
+                  <input type="text" placeholder="Meaning" />
+                </div>
+              </div>
+  
+              <div class="verb-container">
+                <p>10. Break</p>
+  
+                <div class="verb-container__inputs">
+                  <input type="text" placeholder="Past" />
+                  <input type="text" placeholder="Past Participle" />
+                  <input type="text" placeholder="Meaning" />
+                </div>
+              </div>
+  
+              <div class="verb-container">
+                <p>11. Bring</p>
+  
+                <div class="verb-container__inputs">
+                  <input type="text" placeholder="Past" />
+                  <input type="text" placeholder="Past Participle" />
+                  <input type="text" placeholder="Meaning" />
+                </div>
+              </div>
+  
+              <div class="verb-container">
+                <p>12. Build</p>
+  
+                <div class="verb-container__inputs">
+                  <input type="text" placeholder="Past" />
+                  <input type="text" placeholder="Past Participle" />
+                  <input type="text" placeholder="Meaning" />
+                </div>
+              </div>
+  
+              <div class="verb-container">
+                <p>13. Buy</p>
+  
+                <div class="verb-container__inputs">
+                  <input type="text" placeholder="Past" />
+                  <input type="text" placeholder="Past Participle" />
+                  <input type="text" placeholder="Meaning" />
+                </div>
+              </div>
+  
+              <div class="verb-container">
+                <p>14. Catch</p>
+  
+                <div class="verb-container__inputs">
+                  <input type="text" placeholder="Past" />
+                  <input type="text" placeholder="Past Participle" />
+                  <input type="text" placeholder="Meaning" />
+                </div>
+              </div>
+  
+              <div class="verb-container">
+                <p>15. Choose</p>
+  
+                <div class="verb-container__inputs">
+                  <input type="text" placeholder="Past" />
+                  <input type="text" placeholder="Past Participle" />
+                  <input type="text" placeholder="Meaning" />
+                </div>
+              </div>
+            </div>
+          </section>
 
-        <div class="socials">
-          <a href="https://www.facebook.com/fernando.mojica.758737" target="_blank" class="socials__icon"><i class="fa-brands fa-facebook"></i></a>
-          <a href="mailto:ferperezm95@gmail.com" target="_blank" class="socials__icon"><i class="fa-solid fa-envelope"></i></a>
+          <!-- Section 2 - (16 to 30) -->
+          <section class="section">
+            <h2 class="subtitle">Sección 2 - Verbos 16 a 30</h2>
+  
+            <div class="verbs-container">
+              <div class="verb-container">
+                <p>16. Come</p>
+  
+                <div class="verb-container__inputs">
+                  <input type="text" placeholder="Past" />
+                  <input type="text" placeholder="Past Participle" />
+                  <input type="text" placeholder="Meaning" />
+                </div>
+              </div>
+  
+              <div class="verb-container">
+                <p>17. Cost</p>
+  
+                <div class="verb-container__inputs">
+                  <input type="text" placeholder="Past" />
+                  <input type="text" placeholder="Past Participle" />
+                  <input type="text" placeholder="Meaning" />
+                </div>
+              </div>
+  
+              <div class="verb-container">
+                <p>18. Creep</p>
+  
+                <div class="verb-container__inputs">
+                  <input type="text" placeholder="Past" />
+                  <input type="text" placeholder="Past Participle" />
+                  <input type="text" placeholder="Meaning" />
+                </div>
+              </div>
+  
+              <div class="verb-container">
+                <p>19. Cut</p>
+  
+                <div class="verb-container__inputs">
+                  <input type="text" placeholder="Past" />
+                  <input type="text" placeholder="Past Participle" />
+                  <input type="text" placeholder="Meaning" />
+                </div>
+              </div>
+  
+              <div class="verb-container">
+                <p>20. Deal</p>
+  
+                <div class="verb-container__inputs">
+                  <input type="text" placeholder="Past" />
+                  <input type="text" placeholder="Past Participle" />
+                  <input type="text" placeholder="Meaning" />
+                </div>
+              </div>
+  
+              <div class="verb-container">
+                <p>21. Do</p>
+  
+                <div class="verb-container__inputs">
+                  <input type="text" placeholder="Past" />
+                  <input type="text" placeholder="Past Participle" />
+                  <input type="text" placeholder="Meaning" />
+                </div>
+              </div>
+  
+              <div class="verb-container">
+                <p>22. Draw</p>
+  
+                <div class="verb-container__inputs">
+                  <input type="text" placeholder="Past" />
+                  <input type="text" placeholder="Past Participle" />
+                  <input type="text" placeholder="Meaning" />
+                </div>
+              </div>
+  
+              <div class="verb-container">
+                <p>23. Dream</p>
+  
+                <div class="verb-container__inputs">
+                  <input type="text" placeholder="Past" />
+                  <input type="text" placeholder="Past Participle" />
+                  <input type="text" placeholder="Meaning" />
+                </div>
+              </div>
+  
+              <div class="verb-container">
+                <p>24. Drink</p>
+  
+                <div class="verb-container__inputs">
+                  <input type="text" placeholder="Past" />
+                  <input type="text" placeholder="Past Participle" />
+                  <input type="text" placeholder="Meaning" />
+                </div>
+              </div>
+  
+              <div class="verb-container">
+                <p>25. Drive</p>
+  
+                <div class="verb-container__inputs">
+                  <input type="text" placeholder="Past" />
+                  <input type="text" placeholder="Past Participle" />
+                  <input type="text" placeholder="Meaning" />
+                </div>
+              </div>
+  
+              <div class="verb-container">
+                <p>26. Eat</p>
+  
+                <div class="verb-container__inputs">
+                  <input type="text" placeholder="Past" />
+                  <input type="text" placeholder="Past Participle" />
+                  <input type="text" placeholder="Meaning" />
+                </div>
+              </div>
+  
+              <div class="verb-container">
+                <p>27. Fall</p>
+  
+                <div class="verb-container__inputs">
+                  <input type="text" placeholder="Past" />
+                  <input type="text" placeholder="Past Participle" />
+                  <input type="text" placeholder="Meaning" />
+                </div>
+              </div>
+  
+              <div class="verb-container">
+                <p>28. Feed</p>
+  
+                <div class="verb-container__inputs">
+                  <input type="text" placeholder="Past" />
+                  <input type="text" placeholder="Past Participle" />
+                  <input type="text" placeholder="Meaning" />
+                </div>
+              </div>
+  
+              <div class="verb-container">
+                <p>29. Feel</p>
+  
+                <div class="verb-container__inputs">
+                  <input type="text" placeholder="Past" />
+                  <input type="text" placeholder="Past Participle" />
+                  <input type="text" placeholder="Meaning" />
+                </div>
+              </div>
+  
+              <div class="verb-container">
+                <p>30. Fight</p>
+  
+                <div class="verb-container__inputs">
+                  <input type="text" placeholder="Past" />
+                  <input type="text" placeholder="Past Participle" />
+                  <input type="text" placeholder="Meaning" />
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- Section 3 - (31 to 45) -->
+          <section class="section">
+            <h2 class="subtitle">Sección 3 - Verbos 31 a 45</h2>
+  
+            <div class="verbs-container">
+              <div class="verb-container">
+                <p>31. Find</p>
+  
+                <div class="verb-container__inputs">
+                  <input type="text" placeholder="Past" />
+                  <input type="text" placeholder="Past Participle" />
+                  <input type="text" placeholder="Meaning" />
+                </div>
+              </div>
+  
+              <div class="verb-container">
+                <p>32. Flee</p>
+  
+                <div class="verb-container__inputs">
+                  <input type="text" placeholder="Past" />
+                  <input type="text" placeholder="Past Participle" />
+                  <input type="text" placeholder="Meaning" />
+                </div>
+              </div>
+  
+              <div class="verb-container">
+                <p>33. Fly</p>
+  
+                <div class="verb-container__inputs">
+                  <input type="text" placeholder="Past" />
+                  <input type="text" placeholder="Past Participle" />
+                  <input type="text" placeholder="Meaning" />
+                </div>
+              </div>
+  
+              <div class="verb-container">
+                <p>34. Forget</p>
+  
+                <div class="verb-container__inputs">
+                  <input type="text" placeholder="Past" />
+                  <input type="text" placeholder="Past Participle" />
+                  <input type="text" placeholder="Meaning" />
+                </div>
+              </div>
+  
+              <div class="verb-container">
+                <p>35. Forgive</p>
+  
+                <div class="verb-container__inputs">
+                  <input type="text" placeholder="Past" />
+                  <input type="text" placeholder="Past Participle" />
+                  <input type="text" placeholder="Meaning" />
+                </div>
+              </div>
+  
+              <div class="verb-container">
+                <p>36. Forsake</p>
+  
+                <div class="verb-container__inputs">
+                  <input type="text" placeholder="Past" />
+                  <input type="text" placeholder="Past Participle" />
+                  <input type="text" placeholder="Meaning" />
+                </div>
+              </div>
+  
+              <div class="verb-container">
+                <p>37. Freeze</p>
+  
+                <div class="verb-container__inputs">
+                  <input type="text" placeholder="Past" />
+                  <input type="text" placeholder="Past Participle" />
+                  <input type="text" placeholder="Meaning" />
+                </div>
+              </div>
+  
+              <div class="verb-container">
+                <p>38. Get</p>
+  
+                <div class="verb-container__inputs">
+                  <input type="text" placeholder="Past" />
+                  <input type="text" placeholder="Past Participle" />
+                  <input type="text" placeholder="Meaning" />
+                </div>
+              </div>
+  
+              <div class="verb-container">
+                <p>39. Give</p>
+  
+                <div class="verb-container__inputs">
+                  <input type="text" placeholder="Past" />
+                  <input type="text" placeholder="Past Participle" />
+                  <input type="text" placeholder="Meaning" />
+                </div>
+              </div>
+  
+              <div class="verb-container">
+                <p>40. Go</p>
+  
+                <div class="verb-container__inputs">
+                  <input type="text" placeholder="Past" />
+                  <input type="text" placeholder="Past Participle" />
+                  <input type="text" placeholder="Meaning" />
+                </div>
+              </div>
+  
+              <div class="verb-container">
+                <p>41. Grind</p>
+  
+                <div class="verb-container__inputs">
+                  <input type="text" placeholder="Past" />
+                  <input type="text" placeholder="Past Participle" />
+                  <input type="text" placeholder="Meaning" />
+                </div>
+              </div>
+  
+              <div class="verb-container">
+                <p>42. Grow</p>
+  
+                <div class="verb-container__inputs">
+                  <input type="text" placeholder="Past" />
+                  <input type="text" placeholder="Past Participle" />
+                  <input type="text" placeholder="Meaning" />
+                </div>
+              </div>
+  
+              <div class="verb-container">
+                <p>43. Hang</p>
+  
+                <div class="verb-container__inputs">
+                  <input type="text" placeholder="Past" />
+                  <input type="text" placeholder="Past Participle" />
+                  <input type="text" placeholder="Meaning" />
+                </div>
+              </div>
+  
+              <div class="verb-container">
+                <p>44. Have</p>
+  
+                <div class="verb-container__inputs">
+                  <input type="text" placeholder="Past" />
+                  <input type="text" placeholder="Past Participle" />
+                  <input type="text" placeholder="Meaning" />
+                </div>
+              </div>
+  
+              <div class="verb-container">
+                <p>45. Hear</p>
+  
+                <div class="verb-container__inputs">
+                  <input type="text" placeholder="Past" />
+                  <input type="text" placeholder="Past Participle" />
+                  <input type="text" placeholder="Meaning" />
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- Section 4 - (46 to 60) -->
+          <section class="section">
+            <h2 class="subtitle">Sección 4 - Verbos 46 a 60</h2>
+  
+            <div class="verbs-container">
+              <div class="verb-container">
+                <p>46. Hide</p>
+  
+                <div class="verb-container__inputs">
+                  <input type="text" placeholder="Past" />
+                  <input type="text" placeholder="Past Participle" />
+                  <input type="text" placeholder="Meaning" />
+                </div>
+              </div>
+  
+              <div class="verb-container">
+                <p>47. Hit</p>
+  
+                <div class="verb-container__inputs">
+                  <input type="text" placeholder="Past" />
+                  <input type="text" placeholder="Past Participle" />
+                  <input type="text" placeholder="Meaning" />
+                </div>
+              </div>
+  
+              <div class="verb-container">
+                <p>48. Hold</p>
+  
+                <div class="verb-container__inputs">
+                  <input type="text" placeholder="Past" />
+                  <input type="text" placeholder="Past Participle" />
+                  <input type="text" placeholder="Meaning" />
+                </div>
+              </div>
+  
+              <div class="verb-container">
+                <p>49. Hurt</p>
+  
+                <div class="verb-container__inputs">
+                  <input type="text" placeholder="Past" />
+                  <input type="text" placeholder="Past Participle" />
+                  <input type="text" placeholder="Meaning" />
+                </div>
+              </div>
+  
+              <div class="verb-container">
+                <p>50. Keep</p>
+  
+                <div class="verb-container__inputs">
+                  <input type="text" placeholder="Past" />
+                  <input type="text" placeholder="Past Participle" />
+                  <input type="text" placeholder="Meaning" />
+                </div>
+              </div>
+  
+              <div class="verb-container">
+                <p>51. Kneel</p>
+  
+                <div class="verb-container__inputs">
+                  <input type="text" placeholder="Past" />
+                  <input type="text" placeholder="Past Participle" />
+                  <input type="text" placeholder="Meaning" />
+                </div>
+              </div>
+  
+              <div class="verb-container">
+                <p>52. Know</p>
+  
+                <div class="verb-container__inputs">
+                  <input type="text" placeholder="Past" />
+                  <input type="text" placeholder="Past Participle" />
+                  <input type="text" placeholder="Meaning" />
+                </div>
+              </div>
+  
+              <div class="verb-container">
+                <p>53. Lead</p>
+  
+                <div class="verb-container__inputs">
+                  <input type="text" placeholder="Past" />
+                  <input type="text" placeholder="Past Participle" />
+                  <input type="text" placeholder="Meaning" />
+                </div>
+              </div>
+  
+              <div class="verb-container">
+                <p>54. Learn</p>
+  
+                <div class="verb-container__inputs">
+                  <input type="text" placeholder="Past" />
+                  <input type="text" placeholder="Past Participle" />
+                  <input type="text" placeholder="Meaning" />
+                </div>
+              </div>
+  
+              <div class="verb-container">
+                <p>55. Lend</p>
+  
+                <div class="verb-container__inputs">
+                  <input type="text" placeholder="Past" />
+                  <input type="text" placeholder="Past Participle" />
+                  <input type="text" placeholder="Meaning" />
+                </div>
+              </div>
+  
+              <div class="verb-container">
+                <p>56. Let</p>
+  
+                <div class="verb-container__inputs">
+                  <input type="text" placeholder="Past" />
+                  <input type="text" placeholder="Past Participle" />
+                  <input type="text" placeholder="Meaning" />
+                </div>
+              </div>
+  
+              <div class="verb-container">
+                <p>57. Lie</p>
+  
+                <div class="verb-container__inputs">
+                  <input type="text" placeholder="Past" />
+                  <input type="text" placeholder="Past Participle" />
+                  <input type="text" placeholder="Meaning" />
+                </div>
+              </div>
+  
+              <div class="verb-container">
+                <p>58. Lose</p>
+  
+                <div class="verb-container__inputs">
+                  <input type="text" placeholder="Past" />
+                  <input type="text" placeholder="Past Participle" />
+                  <input type="text" placeholder="Meaning" />
+                </div>
+              </div>
+  
+              <div class="verb-container">
+                <p>59. Make</p>
+  
+                <div class="verb-container__inputs">
+                  <input type="text" placeholder="Past" />
+                  <input type="text" placeholder="Past Participle" />
+                  <input type="text" placeholder="Meaning" />
+                </div>
+              </div>
+  
+              <div class="verb-container">
+                <p>60. Mean</p>
+  
+                <div class="verb-container__inputs">
+                  <input type="text" placeholder="Past" />
+                  <input type="text" placeholder="Past Participle" />
+                  <input type="text" placeholder="Meaning" />
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- Section 5 - (61 to 75) -->
+          <section class="section">
+            <h2 class="subtitle">Sección 5 - Verbos 61 a 75</h2>
+  
+            <div class="verbs-container">
+              <div class="verb-container">
+                <p>61. Mean</p>
+  
+                <div class="verb-container__inputs">
+                  <input type="text" placeholder="Past" />
+                  <input type="text" placeholder="Past Participle" />
+                  <input type="text" placeholder="Meaning" />
+                </div>
+              </div>
+  
+              <div class="verb-container">
+                <p>62. Meet</p>
+  
+                <div class="verb-container__inputs">
+                  <input type="text" placeholder="Past" />
+                  <input type="text" placeholder="Past Participle" />
+                  <input type="text" placeholder="Meaning" />
+                </div>
+              </div>
+  
+              <div class="verb-container">
+                <p>63. Pay</p>
+  
+                <div class="verb-container__inputs">
+                  <input type="text" placeholder="Past" />
+                  <input type="text" placeholder="Past Participle" />
+                  <input type="text" placeholder="Meaning" />
+                </div>
+              </div>
+  
+              <div class="verb-container">
+                <p>64. Put</p>
+  
+                <div class="verb-container__inputs">
+                  <input type="text" placeholder="Past" />
+                  <input type="text" placeholder="Past Participle" />
+                  <input type="text" placeholder="Meaning" />
+                </div>
+              </div>
+  
+              <div class="verb-container">
+                <p>65. Quit</p>
+  
+                <div class="verb-container__inputs">
+                  <input type="text" placeholder="Past" />
+                  <input type="text" placeholder="Past Participle" />
+                  <input type="text" placeholder="Meaning" />
+                </div>
+              </div>
+  
+              <div class="verb-container">
+                <p>66. Read</p>
+  
+                <div class="verb-container__inputs">
+                  <input type="text" placeholder="Past" />
+                  <input type="text" placeholder="Past Participle" />
+                  <input type="text" placeholder="Meaning" />
+                </div>
+              </div>
+  
+              <div class="verb-container">
+                <p>67. Ride</p>
+  
+                <div class="verb-container__inputs">
+                  <input type="text" placeholder="Past" />
+                  <input type="text" placeholder="Past Participle" />
+                  <input type="text" placeholder="Meaning" />
+                </div>
+              </div>
+  
+              <div class="verb-container">
+                <p>68. Ring</p>
+  
+                <div class="verb-container__inputs">
+                  <input type="text" placeholder="Past" />
+                  <input type="text" placeholder="Past Participle" />
+                  <input type="text" placeholder="Meaning" />
+                </div>
+              </div>
+  
+              <div class="verb-container">
+                <p>69. Rise</p>
+  
+                <div class="verb-container__inputs">
+                  <input type="text" placeholder="Past" />
+                  <input type="text" placeholder="Past Participle" />
+                  <input type="text" placeholder="Meaning" />
+                </div>
+              </div>
+  
+              <div class="verb-container">
+                <p>70. Run</p>
+  
+                <div class="verb-container__inputs">
+                  <input type="text" placeholder="Past" />
+                  <input type="text" placeholder="Past Participle" />
+                  <input type="text" placeholder="Meaning" />
+                </div>
+              </div>
+  
+              <div class="verb-container">
+                <p>71. Say</p>
+  
+                <div class="verb-container__inputs">
+                  <input type="text" placeholder="Past" />
+                  <input type="text" placeholder="Past Participle" />
+                  <input type="text" placeholder="Meaning" />
+                </div>
+              </div>
+  
+              <div class="verb-container">
+                <p>72. See</p>
+  
+                <div class="verb-container__inputs">
+                  <input type="text" placeholder="Past" />
+                  <input type="text" placeholder="Past Participle" />
+                  <input type="text" placeholder="Meaning" />
+                </div>
+              </div>
+  
+              <div class="verb-container">
+                <p>73. Sell</p>
+  
+                <div class="verb-container__inputs">
+                  <input type="text" placeholder="Past" />
+                  <input type="text" placeholder="Past Participle" />
+                  <input type="text" placeholder="Meaning" />
+                </div>
+              </div>
+  
+              <div class="verb-container">
+                <p>74. Send</p>
+  
+                <div class="verb-container__inputs">
+                  <input type="text" placeholder="Past" />
+                  <input type="text" placeholder="Past Participle" />
+                  <input type="text" placeholder="Meaning" />
+                </div>
+              </div>
+  
+              <div class="verb-container">
+                <p>75. Set</p>
+  
+                <div class="verb-container__inputs">
+                  <input type="text" placeholder="Past" />
+                  <input type="text" placeholder="Past Participle" />
+                  <input type="text" placeholder="Meaning" />
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- Section 6 - (76 to 90) -->
+          <section class="section">
+            <h2 class="subtitle">Sección 6 - Verbos 76 a 90</h2>
+  
+            <div class="verbs-container">
+              <div class="verb-container">
+                <p>76. Sew</p>
+  
+                <div class="verb-container__inputs">
+                  <input type="text" placeholder="Past" />
+                  <input type="text" placeholder="Past Participle" />
+                  <input type="text" placeholder="Meaning" />
+                </div>
+              </div>
+  
+              <div class="verb-container">
+                <p>77. Shake</p>
+  
+                <div class="verb-container__inputs">
+                  <input type="text" placeholder="Past" />
+                  <input type="text" placeholder="Past Participle" />
+                  <input type="text" placeholder="Meaning" />
+                </div>
+              </div>
+  
+              <div class="verb-container">
+                <p>78. Shine</p>
+  
+                <div class="verb-container__inputs">
+                  <input type="text" placeholder="Past" />
+                  <input type="text" placeholder="Past Participle" />
+                  <input type="text" placeholder="Meaning" />
+                </div>
+              </div>
+  
+              <div class="verb-container">
+                <p>79. Shoot</p>
+  
+                <div class="verb-container__inputs">
+                  <input type="text" placeholder="Past" />
+                  <input type="text" placeholder="Past Participle" />
+                  <input type="text" placeholder="Meaning" />
+                </div>
+              </div>
+  
+              <div class="verb-container">
+                <p>80. Show</p>
+  
+                <div class="verb-container__inputs">
+                  <input type="text" placeholder="Past" />
+                  <input type="text" placeholder="Past Participle" />
+                  <input type="text" placeholder="Meaning" />
+                </div>
+              </div>
+  
+              <div class="verb-container">
+                <p>81. Shrink</p>
+  
+                <div class="verb-container__inputs">
+                  <input type="text" placeholder="Past" />
+                  <input type="text" placeholder="Past Participle" />
+                  <input type="text" placeholder="Meaning" />
+                </div>
+              </div>
+  
+              <div class="verb-container">
+                <p>82. Shut</p>
+  
+                <div class="verb-container__inputs">
+                  <input type="text" placeholder="Past" />
+                  <input type="text" placeholder="Past Participle" />
+                  <input type="text" placeholder="Meaning" />
+                </div>
+              </div>
+  
+              <div class="verb-container">
+                <p>83. Sing</p>
+  
+                <div class="verb-container__inputs">
+                  <input type="text" placeholder="Past" />
+                  <input type="text" placeholder="Past Participle" />
+                  <input type="text" placeholder="Meaning" />
+                </div>
+              </div>
+  
+              <div class="verb-container">
+                <p>84. Sink</p>
+  
+                <div class="verb-container__inputs">
+                  <input type="text" placeholder="Past" />
+                  <input type="text" placeholder="Past Participle" />
+                  <input type="text" placeholder="Meaning" />
+                </div>
+              </div>
+  
+              <div class="verb-container">
+                <p>85. Sit</p>
+  
+                <div class="verb-container__inputs">
+                  <input type="text" placeholder="Past" />
+                  <input type="text" placeholder="Past Participle" />
+                  <input type="text" placeholder="Meaning" />
+                </div>
+              </div>
+  
+              <div class="verb-container">
+                <p>86. Sleep</p>
+  
+                <div class="verb-container__inputs">
+                  <input type="text" placeholder="Past" />
+                  <input type="text" placeholder="Past Participle" />
+                  <input type="text" placeholder="Meaning" />
+                </div>
+              </div>
+  
+              <div class="verb-container">
+                <p>87. Slide</p>
+  
+                <div class="verb-container__inputs">
+                  <input type="text" placeholder="Past" />
+                  <input type="text" placeholder="Past Participle" />
+                  <input type="text" placeholder="Meaning" />
+                </div>
+              </div>
+  
+              <div class="verb-container">
+                <p>88. Sow</p>
+  
+                <div class="verb-container__inputs">
+                  <input type="text" placeholder="Past" />
+                  <input type="text" placeholder="Past Participle" />
+                  <input type="text" placeholder="Meaning" />
+                </div>
+              </div>
+  
+              <div class="verb-container">
+                <p>89. Speak</p>
+  
+                <div class="verb-container__inputs">
+                  <input type="text" placeholder="Past" />
+                  <input type="text" placeholder="Past Participle" />
+                  <input type="text" placeholder="Meaning" />
+                </div>
+              </div>
+  
+              <div class="verb-container">
+                <p>90. Spell</p>
+  
+                <div class="verb-container__inputs">
+                  <input type="text" placeholder="Past" />
+                  <input type="text" placeholder="Past Participle" />
+                  <input type="text" placeholder="Meaning" />
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- Section 7 - (91 to 105) -->
+          <section class="section">
+            <h2 class="subtitle">Sección 7 - Verbos 91 a 105</h2>
+  
+            <div class="verbs-container">
+              <div class="verb-container">
+                <p>91. Spend</p>
+  
+                <div class="verb-container__inputs">
+                  <input type="text" placeholder="Past" />
+                  <input type="text" placeholder="Past Participle" />
+                  <input type="text" placeholder="Meaning" />
+                </div>
+              </div>
+  
+              <div class="verb-container">
+                <p>92. Spill</p>
+  
+                <div class="verb-container__inputs">
+                  <input type="text" placeholder="Past" />
+                  <input type="text" placeholder="Past Participle" />
+                  <input type="text" placeholder="Meaning" />
+                </div>
+              </div>
+  
+              <div class="verb-container">
+                <p>93. Split</p>
+  
+                <div class="verb-container__inputs">
+                  <input type="text" placeholder="Past" />
+                  <input type="text" placeholder="Past Participle" />
+                  <input type="text" placeholder="Meaning" />
+                </div>
+              </div>
+  
+              <div class="verb-container">
+                <p>94. Spoil</p>
+  
+                <div class="verb-container__inputs">
+                  <input type="text" placeholder="Past" />
+                  <input type="text" placeholder="Past Participle" />
+                  <input type="text" placeholder="Meaning" />
+                </div>
+              </div>
+  
+              <div class="verb-container">
+                <p>95. Spread</p>
+  
+                <div class="verb-container__inputs">
+                  <input type="text" placeholder="Past" />
+                  <input type="text" placeholder="Past Participle" />
+                  <input type="text" placeholder="Meaning" />
+                </div>
+              </div>
+  
+              <div class="verb-container">
+                <p>96. Stand</p>
+  
+                <div class="verb-container__inputs">
+                  <input type="text" placeholder="Past" />
+                  <input type="text" placeholder="Past Participle" />
+                  <input type="text" placeholder="Meaning" />
+                </div>
+              </div>
+  
+              <div class="verb-container">
+                <p>97. Steal</p>
+  
+                <div class="verb-container__inputs">
+                  <input type="text" placeholder="Past" />
+                  <input type="text" placeholder="Past Participle" />
+                  <input type="text" placeholder="Meaning" />
+                </div>
+              </div>
+  
+              <div class="verb-container">
+                <p>98. Sting</p>
+  
+                <div class="verb-container__inputs">
+                  <input type="text" placeholder="Past" />
+                  <input type="text" placeholder="Past Participle" />
+                  <input type="text" placeholder="Meaning" />
+                </div>
+              </div>
+  
+              <div class="verb-container">
+                <p>99. Stink</p>
+  
+                <div class="verb-container__inputs">
+                  <input type="text" placeholder="Past" />
+                  <input type="text" placeholder="Past Participle" />
+                  <input type="text" placeholder="Meaning" />
+                </div>
+              </div>
+  
+              <div class="verb-container">
+                <p>100. Strike</p>
+  
+                <div class="verb-container__inputs">
+                  <input type="text" placeholder="Past" />
+                  <input type="text" placeholder="Past Participle" />
+                  <input type="text" placeholder="Meaning" />
+                </div>
+              </div>
+  
+              <div class="verb-container">
+                <p>101. Swear</p>
+  
+                <div class="verb-container__inputs">
+                  <input type="text" placeholder="Past" />
+                  <input type="text" placeholder="Past Participle" />
+                  <input type="text" placeholder="Meaning" />
+                </div>
+              </div>
+  
+              <div class="verb-container">
+                <p>102. Sweep</p>
+  
+                <div class="verb-container__inputs">
+                  <input type="text" placeholder="Past" />
+                  <input type="text" placeholder="Past Participle" />
+                  <input type="text" placeholder="Meaning" />
+                </div>
+              </div>
+  
+              <div class="verb-container">
+                <p>103. Swim</p>
+  
+                <div class="verb-container__inputs">
+                  <input type="text" placeholder="Past" />
+                  <input type="text" placeholder="Past Participle" />
+                  <input type="text" placeholder="Meaning" />
+                </div>
+              </div>
+  
+              <div class="verb-container">
+                <p>104. Take</p>
+  
+                <div class="verb-container__inputs">
+                  <input type="text" placeholder="Past" />
+                  <input type="text" placeholder="Past Participle" />
+                  <input type="text" placeholder="Meaning" />
+                </div>
+              </div>
+  
+              <div class="verb-container">
+                <p>105. Teach</p>
+  
+                <div class="verb-container__inputs">
+                  <input type="text" placeholder="Past" />
+                  <input type="text" placeholder="Past Participle" />
+                  <input type="text" placeholder="Meaning" />
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- Section 8 - (106 to 118) -->
+          <section class="section">
+            <h2 class="subtitle">Sección 8 - Verbos 106 a 118</h2>
+  
+            <div class="verbs-container">
+              <div class="verb-container">
+                <p>106. Tear</p>
+  
+                <div class="verb-container__inputs">
+                  <input type="text" placeholder="Past" />
+                  <input type="text" placeholder="Past Participle" />
+                  <input type="text" placeholder="Meaning" />
+                </div>
+              </div>
+  
+              <div class="verb-container">
+                <p>107. Tell</p>
+  
+                <div class="verb-container__inputs">
+                  <input type="text" placeholder="Past" />
+                  <input type="text" placeholder="Past Participle" />
+                  <input type="text" placeholder="Meaning" />
+                </div>
+              </div>
+  
+              <div class="verb-container">
+                <p>108. Think</p>
+  
+                <div class="verb-container__inputs">
+                  <input type="text" placeholder="Past" />
+                  <input type="text" placeholder="Past Participle" />
+                  <input type="text" placeholder="Meaning" />
+                </div>
+              </div>
+  
+              <div class="verb-container">
+                <p>109. Throw</p>
+  
+                <div class="verb-container__inputs">
+                  <input type="text" placeholder="Past" />
+                  <input type="text" placeholder="Past Participle" />
+                  <input type="text" placeholder="Meaning" />
+                </div>
+              </div>
+  
+              <div class="verb-container">
+                <p>110. Tread</p>
+  
+                <div class="verb-container__inputs">
+                  <input type="text" placeholder="Past" />
+                  <input type="text" placeholder="Past Participle" />
+                  <input type="text" placeholder="Meaning" />
+                </div>
+              </div>
+  
+              <div class="verb-container">
+                <p>111. Understand</p>
+  
+                <div class="verb-container__inputs">
+                  <input type="text" placeholder="Past" />
+                  <input type="text" placeholder="Past Participle" />
+                  <input type="text" placeholder="Meaning" />
+                </div>
+              </div>
+  
+              <div class="verb-container">
+                <p>112. Wake</p>
+  
+                <div class="verb-container__inputs">
+                  <input type="text" placeholder="Past" />
+                  <input type="text" placeholder="Past Participle" />
+                  <input type="text" placeholder="Meaning" />
+                </div>
+              </div>
+  
+              <div class="verb-container">
+                <p>113. Wear</p>
+  
+                <div class="verb-container__inputs">
+                  <input type="text" placeholder="Past" />
+                  <input type="text" placeholder="Past Participle" />
+                  <input type="text" placeholder="Meaning" />
+                </div>
+              </div>
+  
+              <div class="verb-container">
+                <p>114. Weave</p>
+  
+                <div class="verb-container__inputs">
+                  <input type="text" placeholder="Past" />
+                  <input type="text" placeholder="Past Participle" />
+                  <input type="text" placeholder="Meaning" />
+                </div>
+              </div>
+  
+              <div class="verb-container">
+                <p>115. Weep</p>
+  
+                <div class="verb-container__inputs">
+                  <input type="text" placeholder="Past" />
+                  <input type="text" placeholder="Past Participle" />
+                  <input type="text" placeholder="Meaning" />
+                </div>
+              </div>
+  
+              <div class="verb-container">
+                <p>116. Win</p>
+  
+                <div class="verb-container__inputs">
+                  <input type="text" placeholder="Past" />
+                  <input type="text" placeholder="Past Participle" />
+                  <input type="text" placeholder="Meaning" />
+                </div>
+              </div>
+  
+              <div class="verb-container">
+                <p>117. Wring</p>
+  
+                <div class="verb-container__inputs">
+                  <input type="text" placeholder="Past" />
+                  <input type="text" placeholder="Past Participle" />
+                  <input type="text" placeholder="Meaning" />
+                </div>
+              </div>
+  
+              <div class="verb-container">
+                <p>118. Write</p>
+  
+                <div class="verb-container__inputs">
+                  <input type="text" placeholder="Past" />
+                  <input type="text" placeholder="Past Participle" />
+                  <input type="text" placeholder="Meaning" />
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <div class="buttons">
+            <p class="btn btn-reset">Reiniciar</p>
+            <p class="btn btn-answers">Respuestas</p>
+          </div>
         </div>
-      </section>
+      
+        <section class="shortcuts">
+          <h2 class="subtitle">Atajos de teclado</h2>
+          <p>Alt + r = Reiniciar</p>
+          <p>Alt + a = Respuestas</p>
+        </section>
 
-      <section id="contribution" class="contribute">
-        <h2 class="subtitle">¿Te gustaría contribuir en este proyecto?</h2>
-        <p class="regular-text-justify">Esta página le pertenece 100% a <a href="https://fermop.github.io/portafolio/" target="_blank" class="author"><span class="bold">Fernando Pérez</span></a>, pero si te gustaría contribuir ¡siéntete cómodo en hacerlo! Este proyecto es completamente open source y cualquiera puede dejar su granito de arena. 😄</p>
-        <p class="regular-text-justify">Las tecnologías utilizadas fueron <span class="bold">HTML5</span>, <span class="bold">CSS3</span> y <span class="bold">JavaScript</span>. Si ves alguna manera de eliminar código innecesario o se te ocurre alguna función por implementar contáctame y trabajemos juntos! Puedes clonar el repositorio en tu computadora sin ningún problema, yo estaré a la espera de tu pull request. 💻👨🏽‍💻</p>
+        <section id="error" class="error">
+          <h2 class="subtitle">¿Encontraste algún error?</h2>
+          <p class="regular-text-justify">
+            Si literalmente escribiste tu respuesta igual a como viene en las <a class="verbs-link" href="./verbs/verbos.pdf" target="_blank">hojas proporcionadas por la profesora</a> y te sale como erróneo, ¡quiero ofrecerte una disculpa! Te agradecería bastante si me lo hicieras saber para hacer la correción lo más rápido posible y brindarte una herramienta completamente gratuita para que puedas aprender sin complicaciones! Puedes contactarme mediante mi cuenta personal de Facebook o enviándome un correo electrónico. ¡Trataré de contestarte lo antes posible!
+          </p>
 
-        <div class="socials">
-          <a href="https://www.facebook.com/fernando.mojica.758737" target="_blank" class="socials__icon"><i class="fa-brands fa-facebook"></i></a>
-          <a href="mailto:ferperezm95@gmail.com" target="_blank" class="socials__icon"><i class="fa-solid fa-envelope"></i></a>
-          <a href="https://github.com/fermop/Verbs" target="_blank" class="socials__icon"><i class="fa-brands fa-github"></i></a>
-        </div>
-      </section>
-    </div>
-  </main>
+          <div class="socials-wrapper">
+            <a
+              href="https://www.facebook.com/fernando.mojica.758737"
+              target="_blank"
+              class="social__icon"
+              >
+              <i class="fa-brands fa-facebook"></i>
+            </a>
+            <a
+              href="mailto:ferperezm95@gmail.com"
+              target="_blank"
+              class="social__icon">
+              <i class="fa-solid fa-envelope"></i>
+            </a>
+          </div>
+        </section>
 
-  <script src="./js/scripts.js"></script>
-</body>
+        <section id="contribution" class="contribute">
+          <h2 class="subtitle">¿Te gustaría contribuir en este proyecto?</h2>
+          <p class="regular-text-justify">
+            Esta página le pertenece 100% a
+            <a
+              href="https://github.com/fermop"
+              target="_blank"
+              class="author"
+              ><span class="fw-bold">Fernando Pérez</span></a>, pero si te gustaría contribuir ¡siéntete cómodo en hacerlo! Este proyecto es completamente open source y cualquiera puede dejar sugranito de arena. 😄
+          </p>
+          <p class="regular-text-justify">
+            Las tecnologías utilizadas fueron <span class="fw-bold">HTML5</span>, <span class="fw-bold">CSS3</span> y <span class="fw-bold">JavaScript</span>. Si ves alguna manera de eliminar código innecesario o se te ocurre alguna función por implementar contáctame y trabajemos juntos! Puedes clonar el repositorio en tu computadora sin ningún problema, yo estaré a la espera de tu pull request. 💻👨🏽‍💻
+          </p>
+
+          <div class="socials-wrapper">
+            <a
+              href="https://www.facebook.com/fernando.mojica.758737"
+              target="_blank"
+              class="social__icon"
+              ><i class="fa-brands fa-facebook"></i
+            ></a>
+            <a
+              href="mailto:ferperezm95@gmail.com"
+              target="_blank"
+              class="social__icon"
+              ><i class="fa-solid fa-envelope"></i
+            ></a>
+            <a
+              href="https://github.com/fermop/Verbs"
+              target="_blank"
+              class="social__icon"
+              ><i class="fa-brands fa-github"></i
+            ></a>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <script src="./js/nav-darkmode.js"></script>
+    <script src="./js/data.js"></script>
+    <script src="./js/main.js"></script>
+  </body>
 </html>
