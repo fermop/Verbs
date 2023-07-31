@@ -58,6 +58,7 @@ p,h1,h2,h3,h4,h5,h6 {overflow-wrap: break-word;}
 /* ----- Global ----- */
 * {
   transition: 250ms;
+  transition-property: color, background-color;
 }
 
 html {
@@ -124,6 +125,18 @@ p {font-weight: var(--fw-regular);}
   transition: 250ms;
 }
 
+.toggles-container {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.theme-toggle {
+  color: var(--color-1);
+  font-size: 1.25rem;
+  cursor: pointer;
+}
+
 .hamburger {
   color: var(--color-1);
   font-size: 1.25rem;
@@ -163,12 +176,6 @@ p {font-weight: var(--fw-regular);}
   font-size: 1rem;
   text-decoration: none;
   transition: 250ms;
-}
-
-.theme-toggle {
-  color: var(--color-1);
-  font-size: 1.5rem;
-  cursor: pointer;
 }
 
 /* Main content */
