@@ -193,8 +193,12 @@ main {
   /* Sections to select */
 .sections-to-select__wrapper {
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: 1fr 1fr;
   gap: 1rem;
+}
+
+.sections-to-select__wrapper p {
+  font-size: 0.875rem;
 }
 .sections-available {
   background-color: var(--section-color);
@@ -334,8 +338,8 @@ input.incorrect {
 
 /* Responsiveness */
 @media (min-width: 26.25rem) {
-  .sections-to-select__wrapper {
-    grid-template-columns: 1fr 1fr;
+  .sections-to-select__wrapper p {
+    font-size: 1rem;
   }
 }
 
