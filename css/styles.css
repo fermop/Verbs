@@ -93,9 +93,8 @@ p {font-weight: var(--fw-regular);}
 .subtitle {margin-bottom: 1rem;}
 
 /* ----- Utilities ----- */
-.regular-text-justify {
+.regular-text {
   font-size: 1rem;
-  text-align: justify;
 }
 
 .fw-bold {
