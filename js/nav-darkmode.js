@@ -27,5 +27,3 @@ themeToggleBtn.addEventListener('click', handleThemeToggle);
 navItems.forEach(element => element.onclick = () => {
   navList.classList.remove('active');
 });
-
-console.log(navItems)
